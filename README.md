@@ -1,2 +1,2 @@
 # Learning Vue JS (Vue)
-vue a reactive web front end framework  
+vue a reactive front end web framework  
