@@ -1,2 +1,2 @@
-# learning-vue
+# Learning Vue
 learning vue 
