@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Learning Vue</title>
+    <link rel="stylesheet" href="styley.css" />
   </head>
   <body>
-    <div>
+    <div id="app">
+      <div>
         <label for="goal">Goal</label>
-        <input type="text" />
-        <button>Add Goal</button>
+        <input type="text" id="goal" v-model="enteredValue"/>
+        <button v-on:click="addGoal">Add Goal</button>
         <ul>
-            <li>Test</li>
+          <li v-for="goal in goals">{{ goal }}</li>
         </ul>
-      <script src="scripty.js"></script>
-    </div>
+        <script src="https://unpkg.com/vue@next"></script>
+        <script src="app.js"></script>
+      </div>
+  </div>
   </body>
 </html>
