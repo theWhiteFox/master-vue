@@ -1,19 +1,20 @@
 const app = Vue.createApp({
     data() {
         return {
-            courseGoalA: 'Finish the course and learn Vue!',
-            courseGoalB: 'Master Vue to build Magically Fab Apps!',
-            vueLink: 'https://vuejs.org'
+            myName: 'StephOC theWhiteFox!',
+            yearsWorkingWithVue: 2,
+            foxImg: 'https://images.fineartamerica.com/images-medium-large-5/eyes-of-a-white-fox-athena-mckinzie.jpg'
         };
     },
     methods: {
-        outputGoal() {
-            const randomNumber = Math.random();
-            if(randomNumber < 0.5) {
-                return this.courseGoalA;
-            } else {
-                return this.courseGoalB;
-            }
+        calYearsWorkingWithVue() {
+            return this.yearsWorkingWithVue + 5;
+        },
+        inputMyName() {
+            return this.myName;
+        },
+        randomNo() {
+            return Math.floor(Math.random() * 11);
         }
     }
 });

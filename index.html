@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Master Basics</title>
+    <title>Master Vue</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
       rel="stylesheet"
@@ -13,13 +13,18 @@
     <script src="app.js" defer></script>
   </head>
   <body>
-    <header>
-      <h1>Vue Course Goals</h1>
-    </header>
     <section id="user-goal">
-      <h2>My Course Goal</h2>
-      <p>{{ outputGoal() }}</p>
-      <p>Learn more <a v-bind:href="vueLink">about Vue</a>.</p>
+    <header>
+      <h1>{{ myName }}</h1>
+    </header>
+      <h2>Master Vue</h2>
+      <p>Years Working With Vue: {{ yearsWorkingWithVue }}</p>
+      <p>Years Working With Vue in 5 years time: {{ calYearsWorkingWithVue() }}</p>
+      <p>Fav number: random between 0 and 10: {{ randomNo() }}</p>
+      <div>
+        <img v-bind:src="foxImg"></img>
+      </div>
+      <input v-model="inputMyName()" v-bind:placeholder="inputMyName()" type="text">
     </section>
   </body>
 </html>

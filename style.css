@@ -15,7 +15,7 @@ header {
   margin: 3rem auto;
   border-radius: 10px;
   padding: 1rem;
-  background-color: #4fc08d;
+  background-color: #e34c39;
   color: white;
   text-align: center;
   width: 90%;
@@ -35,16 +35,16 @@ header {
 #user-goal h2 {
   font-size: 2rem;
   border-bottom: 4px solid #ccc;
-  color: #4fc08d;
+  color: #e34c39;
   margin: 0 0 1rem 0;
 }
 
 #user-goal p {
   font-size: 1.25rem;
   font-weight: bold;
-  border: 1px solid #4fc08d;
-  background-color: #4fc08d;
-  color: white;
+  border: 1px solid #e34c39;
+  background-color: #85cdca;
+  color: black;
   padding: 0.5rem;
   border-radius: 25px;
 }
@@ -56,8 +56,8 @@ header {
 
 #user-goal input:focus {
   outline: none;
-  border-color: #1b995e;
-  background-color: #d7fdeb;
+  border-color: #e34c39;
+  background-color: #85cdca;
 }
 
 #user-goal button {
@@ -75,4 +75,11 @@ header {
   background-color: #ec3169;
   border-color: #ec3169;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
+}
+
+
+img {
+  margin-bottom: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
