@@ -10,6 +10,7 @@ Vue a reactive front end web framework
 - {{ }} Interpolation
 - v-bind Directive
 - v-html="" output HTML content 
+- v-on listen to user events 
 
 cross side scripting attacks 
 

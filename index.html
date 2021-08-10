@@ -15,16 +15,12 @@
   <body>
     <section id="user-goal">
     <header>
-      <h1>{{ myName }}</h1>
+      <h1>{{ title }}</h1>
     </header>
-      <h2>Master Vue</h2>
-      <p>Years Working With Vue: {{ yearsWorkingWithVue }}</p>
-      <p>Years Working With Vue in 5 years time: {{ calYearsWorkingWithVue() }}</p>
-      <p>Fav number: random between 0 and 10: {{ randomNo() }}</p>
-      <div>
-        <img v-bind:src="foxImg"></img>
-      </div>
-      <input v-model="inputMyName()" v-bind:placeholder="inputMyName()" type="text">
+      <h2>events in action</h2>
+      <button v-on:click="counter++">Add</button>
+      <button>Remove</button>
+      <p>Result: {{ counter }}</p>
     </section>
   </body>
 </html>
