@@ -22,7 +22,7 @@
       <button v-on:click="add(5)">Add</button>
       <button v-on:click="reduce(5)">Remove</button>
       <p>Result: {{ counter }}</p>
-      <input type="text" v-on:input="setName($event, 'theWhiteFox')">
+      <input type="text" placeholder="name" v-on:input="setName($event, 'theWhiteFox')">
       <p>Your name: {{ name }}</p>
     </section>
   </body>
