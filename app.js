@@ -4,9 +4,13 @@ const app = Vue.createApp({
             title: 'Master Vue!',
             counter: 0,
             name: '',
+            confirmedName: '',
         };
     },
     methods: {
+        confirmInput() {
+            this.confirmedName = this.name;
+        },
         add(num) {
             this.counter = this.counter + num;
         },

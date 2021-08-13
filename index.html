@@ -20,10 +20,14 @@
     </header>
       <h2>events in action</h2>
       <button v-on:click="add(5)">Add</button>
-      <button v-on:click="reduce(5)">Remove</button>
+      <button v-on:click.right="reduce(5)">Remove</button>
       <p>Result: {{ counter }}</p>
-      <input type="text" placeholder="name" v-on:input="setName($event, 'theWhiteFox')">
-      <p>Your name: {{ name }}</p>
+      <input type="text" placeholder="name" v-on:input="setName($event, 'theWhiteFox')" v-on:keyup.enter="confirmInput">
+      <p>Your name: {{ confirmedName }}</p>
+      <form v-on:submit.prevent="submitForm">
+        <input type="text">
+        <button>Sign Up</button>
+      </form>
     </section>
   </body>
 </html>

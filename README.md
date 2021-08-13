@@ -13,7 +13,7 @@ Vue a reactive front end web framework
 - v-html="" output HTML content https://vuejs.org/images/logo.svg?_sw-precache=346e12ee28bb0e5f5600d47beb4c7a47
 - v-on listen to user events
 - $event variable
-- 
+- modifiers
 
 [MDN Cross-site scripting](https://developer.mozilla.org/en-US/docs/Glossary/Cross-site_scripting) 
 
