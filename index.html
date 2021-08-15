@@ -18,11 +18,15 @@
     </header>
     <section id="app">
       <h2>Event Practice</h2>
+      <label for="saveText">Type alert text: </label>
+      <input v-on:keydown="saveAlert" type="text" />
       <button v-on:click="showAlert">Show Alert</button>
       <hr />
+      <label for="saveText">Type away there now: </label>
       <input v-on:keydown="saveText" type="text" />
       <p>{{ userInput }}</p>
       <hr />
+      <label for="saveText">Type and hit enter: </label>
       <input v-on:keyup.enter="confirmedSaveText" type="text" />
       <p>{{ confirmInput }}</p>
     </section>

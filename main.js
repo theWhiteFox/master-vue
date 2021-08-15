@@ -1,21 +1,24 @@
 const app = Vue.createApp({
     data() {
         return {
-            title: 'Master Stephen',
+            alertText: '',
             userInput: '',
             confirmInput: '',
         };
     },
     methods: {
+        saveAlert(event) {
+            this.alertText = event.target.value;
+        },
         showAlert() {
-            alert(this.title);
-          },
-          saveText(event) {
+            alert(this.alertText);
+        },
+        saveText(event) {
             this.userInput = event.target.value;
-          },
-          confirmedSaveText(event) {
+        },
+        confirmedSaveText(event) {
             this.confirmInput = event.target.value;
-          }
+        }
     }
 });
 
