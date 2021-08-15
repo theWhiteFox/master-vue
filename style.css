@@ -22,45 +22,42 @@ header {
   max-width: 40rem;
 }
 
-#user-goal {
+#app {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-  margin: 3rem auto;
+  margin: 3rem;
   border-radius: 10px;
   padding: 1rem;
   text-align: center;
-  width: 90%;
-  max-width: 40rem;
 }
 
-#user-goal h2 {
+#app h2 {
   font-size: 2rem;
   border-bottom: 4px solid #ccc;
-  color: #e34c39;
+  color: #1b995e;
   margin: 0 0 1rem 0;
 }
 
-#user-goal p {
+#app p {
   font-size: 1.25rem;
   font-weight: bold;
-  border: 1px solid #e34c39;
-  background-color: #85cdca;
-  color: black;
+  background-color: #8ddba4;
   padding: 0.5rem;
+  color: #1f1f1f;
   border-radius: 25px;
 }
 
-#user-goal input {
+#app input {
   font: inherit;
   border: 1px solid #ccc;
 }
 
-#user-goal input:focus {
+#app input:focus {
   outline: none;
-  border-color: #e34c39;
-  background-color: #85cdca;
+  border-color: #1b995e;
+  background-color: #d7fdeb;
 }
 
-#user-goal button {
+#app button {
   font: inherit;
   cursor: pointer;
   border: 1px solid #ff0077;
@@ -70,16 +67,9 @@ header {
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26);
 }
 
-#user-goal button:hover,
-#user-goal button:active {
+#app button:hover,
+#app button:active {
   background-color: #ec3169;
   border-color: #ec3169;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
-}
-
-
-img {
-  margin-bottom: 8px;
-  vertical-align: middle;
-  width: 100%;
 }

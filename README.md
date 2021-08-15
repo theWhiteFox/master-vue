@@ -22,3 +22,5 @@ Vue a reactive front end web framework
 [Vue events](https://vuejs.org/v2/guide/events.html)
 
 [reuseable-charting-d3](https://www.vuescript.com/reuseable-charting-d3/)
+
+[https://flaviocopes.com/vue-vscode/](https://flaviocopes.com/vue-vscode/)
