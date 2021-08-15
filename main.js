@@ -12,6 +12,7 @@ const app = Vue.createApp({
         },
         showAlert() {
             alert(this.alertText);
+            this.alertText = '';
         },
         saveText(event) {
             this.userInput = event.target.value;

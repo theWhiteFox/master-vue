@@ -19,7 +19,7 @@
     <section id="app">
       <h2>Event Practice</h2>
       <label for="saveText">Type alert text: </label>
-      <input v-on:keydown="saveAlert" type="text" />
+      <input v-bind:value="alertText" v-on:keydown="saveAlert" type="text" />
       <button v-on:click="showAlert">Show Alert</button>
       <hr />
       <label for="saveText">Type away there now: </label>
