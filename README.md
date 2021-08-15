@@ -14,6 +14,7 @@ Vue a reactive front end web framework
 - v-on listen to user events
 - $event variable
 - modifiers
+- v-model two way binding
 
 [MDN Cross-site scripting](https://developer.mozilla.org/en-US/docs/Glossary/Cross-site_scripting) 
 
