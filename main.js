@@ -1,39 +1,35 @@
 const app = Vue.createApp({
     data() {
         return {
-            name: '',
-            alertText: '',
-            userInput: '',
-            confirmInput: '',
+            calNum: 0,
+            warning: '',
         };
     },
     computed: {
-        addName() {
-            console.log('Running again...');
-            if(this.name === '') {
-                return '';
+        result() {
+            if(this.calNum < 37) {
+                console.log(this.calNum);
+                return this.warning = 'Not there yet';
+            } else if(this.calNum === 37) {
+                return this.calNum;
+            } else {
+                return this.warning = 'Too much!';
             }
-            return this.name + ' ' + 'theWhiteFox';
+        }
+    },
+    watch: {
+        result() {
+            const that = this;
+            setTimeout(function() {
+                that.calNum = 0;
+            }, 3000);
         }
     },
     methods: {
-        saveAlert(event) {
-            this.alertText = event.target.value;
-        },
-        showAlert() {
-            alert(this.alertText);
-            this.alertText = '';
-        },
-        saveText(event) {
-            this.userInput = event.target.value;
-        },
-        resetInput() {
-            this.name = '';
-        },
-        confirmedSaveText(event) {
-            this.confirmInput = event.target.value;
+        addNumber(num) {
+            this.calNum += num;
         }
     }
 });
 
-app.mount('#app');
+app.mount('#assignment');

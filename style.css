@@ -12,35 +12,30 @@ body {
 
 header {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-  margin: 3rem auto;
+  margin: 3rem;
   border-radius: 10px;
   padding: 1rem;
-  background-color: #e34c39;
+  background-color: #1b995e;
   color: white;
   text-align: center;
-  width: 90%;
-  max-width: 40rem;
 }
 
-#app {
+#assignment {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   margin: 3rem;
   border-radius: 10px;
   padding: 1rem;
   text-align: center;
-  width: 90%;
-  max-width: 40rem;
-  margin: 3rem auto;
 }
 
-#app h2 {
+#assignment h2 {
   font-size: 2rem;
   border-bottom: 4px solid #ccc;
   color: #1b995e;
   margin: 0 0 1rem 0;
 }
 
-#app p {
+#assignment p {
   font-size: 1.25rem;
   font-weight: bold;
   background-color: #8ddba4;
@@ -49,18 +44,18 @@ header {
   border-radius: 25px;
 }
 
-#app input {
+#assignment input {
   font: inherit;
   border: 1px solid #ccc;
 }
 
-#app input:focus {
+#assignment input:focus {
   outline: none;
   border-color: #1b995e;
   background-color: #d7fdeb;
 }
 
-#app button {
+#assignment button {
   font: inherit;
   cursor: pointer;
   border: 1px solid #ff0077;
@@ -70,8 +65,8 @@ header {
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26);
 }
 
-#app button:hover,
-#app button:active {
+#assignment button:hover,
+#assignment button:active {
   background-color: #ec3169;
   border-color: #ec3169;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.26);
