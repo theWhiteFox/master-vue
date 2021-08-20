@@ -18,11 +18,14 @@
     </header>
     <section id="todo">
       <h2>My todo list</h2>
-      <input type="text">
-      <button>Add todo</button>
-      <p>No items have been added yet!</p>
-      <ul>
-        <li>Todo</li>
+      <input type="text" v-model="enteredItemVal">
+      <button @click="addItem">Add item</button>
+      <p v-if="items.length === 0">No items have been added yet!</p>
+      <ul v-else>
+        <li v-for="(item, i) in items" @click="removeItem(i)" :key="item">
+          <p>{{ item }} - {{ i }}</p>
+          <input type="text" @click.stop>
+        </li>
       </ul>
     </section>
   </body>
