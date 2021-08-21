@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vue Todo List</title>
+    <title>King Slayer Game</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
       rel="stylesheet"
@@ -14,19 +14,31 @@
   </head>
   <body>
     <header>
-      <h1>theWhiteFox Master Vue</h1>
+      <h1>King Slayer</h1>
     </header>
-    <section id="todo">
-      <h2>My todo list</h2>
-      <input type="text" v-model="enteredItemVal">
-      <button @click="addItem">Add item</button>
-      <p v-if="items.length === 0">No items have been added yet!</p>
-      <ul v-else>
-        <li v-for="(item, i) in items" @click="removeItem(i)" :key="item">
-          <p>{{ item }} - {{ i }}</p>
-          <input type="text" @click.stop>
-        </li>
-      </ul>
-    </section>
+    <div id="game">
+      <section id="monster" class="container">
+        <h2>King's Health</h2>
+        <div class="healthbar">
+          <div class="healthbar__value"></div>
+        </div>
+      </section>
+      <section id="player" class="container">
+        <h2>Your Health</h2>
+        <div class="healthbar">
+          <div class="healthbar__value"></div>
+        </div>
+      </section>
+      <section id="controls">
+        <button>ATTACK</button>
+        <button>SNEAK ATTACK</button>
+        <button>HEAL</button>
+        <button>SURRENDER</button>
+      </section>
+      <section id="log" class="container">
+        <h2>Moves Made</h2>
+        <ul></ul>
+      </section>
+    </div>
   </body>
 </html>
