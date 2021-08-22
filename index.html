@@ -17,23 +17,30 @@
       <h1>King Slayer</h1>
     </header>
     <div id="game">
-      <section id="monster" class="container">
+      <section id="king" class="container">
         <h2>King's Health</h2>
         <div class="healthbar">
-          <div class="healthbar__value"></div>
+          <div class="healthbar__value" :style="kingBarStyle"></div>
         </div>
       </section>
       <section id="player" class="container">
         <h2>Your Health</h2>
         <div class="healthbar">
-          <div class="healthbar__value"></div>
+          <div class="healthbar__value" :style="playerBarStyle"></div>
         </div>
       </section>
-      <section id="controls">
-        <button>ATTACK</button>
-        <button>SNEAK ATTACK</button>
-        <button>HEAL</button>
-        <button>SURRENDER</button>
+      <section class="container" v-if="winner">
+        <h2>Game Over!</h2>
+        <h3 v-if="winner === 'king'">You Lost!</h3>
+        <h3 v-else-if="winner === 'player'">You Won!</h3>
+        <h3 v-else>It's a Draw!</h3>
+        <button @click="startGame"></button>
+      </section>
+      <section id="controls" v-else>
+        <button @click="attackKing">ATTACK</button>
+        <button :disabled="sneakAttack" @click="sneakAttackKing">SNEAK ATTACK</button>
+        <button @click="healPlayer">HEAL</button>
+        <button @click="surrender">SURRENDER</button>
       </section>
       <section id="log" class="container">
         <h2>Moves Made</h2>
