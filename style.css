@@ -48,7 +48,7 @@ section {
   border-radius: 12px;
 }
 
-#monster h2,
+#king h2,
 #player h2 {
   margin: 0.25rem;
 }
@@ -107,7 +107,7 @@ button:disabled {
   color: #7700ff;
 }
 
-.log--monster {
+.log--king {
   color: #da8d00;
 }
 
