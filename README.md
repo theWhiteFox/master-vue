@@ -38,4 +38,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Router
 
-core library [Router VueJS](https://router.vuejs.org/)
+core library [Router VueJS](https://next.router.vuejs.org)
