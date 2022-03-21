@@ -2,6 +2,8 @@
 
 Build Web application by learning Vue
 
+Create project in existing project folder 
+
 ```sh
 vue create .
 ```
