@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+    <body>
+        <p>Reactivity: Vue3</p>
+        <h1 id="h1">???</h1>
+        <script>
+            let info = {
+                msg:'send me to the H1 tag' // initial val & value storage
+            }
+            document.getElementById('h1').innerText = info.msg
+            Object.defineProperty(info, 'reactive_msg', { // proxy for info.msg
+                get() {
+                    return info.msg
+                },
+                set(newVal) {
+                    document.getElementById('h1').innerText = newVal
+                    msg.info = newVal
+                }
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+        <p>Reactivity: Vue3</p>
+        <h1 id="h1">???</h1>
+        <script>
+            let info = {
+                msg:'send me to the H1 tag', // initial val & value storage
+                test() {
+                    console.log(this)
+                }
+            }
+            document.getElementById('h1').innerText = info.msg
+            
+            let info_proxy = new Proxy(info, {
+                get(target,prop,reciever){
+                    if(typeof target[prop] == `string`) {
+                        taget[prop] = target[prop]+' returned by proxy getter'
+                    }
+                    return Reflect.get(...arguments)             
+                },
+                set(target,prop,newVal,reciever){
+                    if(typeof target[prop] == `string`) {
+                        target[prop] = newVal+' set by proxy getter'
+                    }
+                    Reflect.set(...arguments)
+                }
+            })
+        </script>
+    </body>
+</html>
